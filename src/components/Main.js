@@ -5,7 +5,7 @@ export const Main = () => {
     return (
         <main className="main">
             <section className="home section" id="home">
-                <div className="home__container container grid">
+                <div className="home__container container grid" data-aos="fade-down">
                     <div className="home__content grid">
                         <div className="home__social">
                             <a href="https://github.com/marco-cortes" className="home__social-icon" target="_blank" rel="noreferrer">
@@ -36,7 +36,7 @@ export const Main = () => {
                             </svg>
                         </div>
                         <div className="home__data">
-                            <h1 className="home__title">Hola, me llamo Marco</h1>
+                            <h1 className="home__title">Hola, yo soy Marco</h1>
                             <h3 className="home__subtitle">Soy un programador web</h3>
                             <p className="home__description">
                                 Tengo conocimiento y experiencia en el desarrollo web, tanto en el lado front como en el backend

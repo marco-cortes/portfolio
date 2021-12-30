@@ -31,7 +31,7 @@ export const Services = () => {
                 <div className="services__content">
                     <div>
                         <i className="uil uil-server services__icon"></i>
-                        <h3 className="services__title">Backend <br/> Developer</h3>
+                        <h3 className="services__title">Backend</h3>
                     </div>
                     <span className="button button--flex button--small button--link services__button">
                         Ver más
@@ -39,7 +39,7 @@ export const Services = () => {
                     </span>
                     <div className="services__modal">
                         <div className="services__modal-content">
-                            <h4 className="services__modal-title">Backend Developer</h4>
+                            <h4 className="services__modal-title">Backend </h4>
                             <i className="uil uil-times services__modal-close"></i>
                             <ul className="services__modal-services grid">
                                 <li className="services__modal-service">
@@ -66,7 +66,7 @@ export const Services = () => {
                 <div className="services__content">
                     <div>
                         <i className="uil uil uil-arrow services__icon"></i>
-                        <h3 className="services__title">Frontend <br/> Developer</h3>
+                        <h3 className="services__title">Frontend </h3>
                     </div>
                     <span className="button button--flex button--small button--link services__button">
                         Ver más
@@ -74,7 +74,7 @@ export const Services = () => {
                     </span>
                     <div className="services__modal">
                         <div className="services__modal-content">
-                            <h4 className="services__modal-title">Frontend Developer</h4>
+                            <h4 className="services__modal-title">Frontend </h4>
                             <i className="uil uil-times services__modal-close"></i>
                             <ul className="services__modal-services grid">
                                 <li className="services__modal-service">
@@ -102,7 +102,7 @@ export const Services = () => {
                 <div className="services__content">
                     <div>
                         <i className="uil uil-database services__icon"></i>
-                        <h3 className="services__title">Database <br/> Designer</h3>
+                        <h3 className="services__title">Databases</h3>
                     </div>
                     <span className="button button--flex button--small button--link services__button">
                         Ver más
@@ -110,7 +110,7 @@ export const Services = () => {
                     </span>
                     <div className="services__modal">
                         <div className="services__modal-content">
-                            <h4 className="services__modal-title">Database Designer</h4>
+                            <h4 className="services__modal-title">Databases</h4>
                             <i className="uil uil-times services__modal-close"></i>
                             <ul className="services__modal-services grid">
                                 <li className="services__modal-service">

@@ -26,7 +26,7 @@ export const Skills = () => {
             <h2 className="section__title">Habilidades</h2>
             <span className="section__subtitle">Mi nivel técnico</span>
 
-            <div className="skills__container container grid">
+            <div className="skills__container container grid" data-aos="fade-right">
                 <div>
                     <div className="skills__content skills__open">
                         <div className="skills__header">
@@ -50,7 +50,7 @@ export const Skills = () => {
                                     </span>
                                 </div>
                             </div>
-                            <div className="skills_data">
+                            <div className="skills__data">
                                 <div className="skills__titles">
                                     <h3 className="skills__name">Spring</h3>
                                     <span className="skills__number">70%</span>
@@ -226,10 +226,10 @@ export const Skills = () => {
                             <div className="skills__data">
                                 <div className="skills__titles">
                                     <h3 className="skills__name">Azure</h3>
-                                    <span className="skills__number">90%</span>
+                                    <span className="skills__number">70%</span>
                                 </div>
                                 <div className="skills__bar">
-                                    <span className="skills__percentage skills__mysql">
+                                    <span className="skills__percentage skills__azure">
 
                                     </span>
                                 </div>
@@ -237,10 +237,10 @@ export const Skills = () => {
                             <div className="skills__data">
                                 <div className="skills__titles">
                                     <h3 className="skills__name">Google Cloud</h3>
-                                    <span className="skills__number">80%</span>
+                                    <span className="skills__number">50%</span>
                                 </div>
                                 <div className="skills__bar">
-                                    <span className="skills__percentage skills__workbench">
+                                    <span className="skills__percentage skills__google">
 
                                     </span>
                                 </div>
@@ -249,10 +249,10 @@ export const Skills = () => {
                             <div className="skills__data">
                                 <div className="skills__titles">
                                     <h3 className="skills__name">AWS</h3>
-                                    <span className="skills__number">70%</span>
+                                    <span className="skills__number">60%</span>
                                 </div>
                                 <div className="skills__bar">
-                                    <span className="skills__percentage skills__postgres">
+                                    <span className="skills__percentage skills__aws">
 
                                     </span>
                                 </div>
@@ -264,7 +264,7 @@ export const Skills = () => {
                                     <span className="skills__number">65%</span>
                                 </div>
                                 <div className="skills__bar">
-                                    <span className="skills__percentage skills__firebase">
+                                    <span className="skills__percentage skills__heroku">
 
                                     </span>
                                 </div>

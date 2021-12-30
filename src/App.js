@@ -8,9 +8,13 @@ import { Portfolio } from "./components/Portfolio";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { useEffect } from "react";
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 function App() {
 
+  
+  
   useEffect(() => {
     const sections = document.querySelectorAll('section[id]');
 
@@ -43,10 +47,11 @@ function App() {
       if(this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
   }
   window.addEventListener('scroll', scrollUp)
-
+  Aos.init();
   }, [])
 
   return (
+
     <div className="App">
       <Header />
       <Main />

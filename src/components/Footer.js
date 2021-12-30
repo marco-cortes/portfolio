@@ -33,7 +33,7 @@ export const Footer = () => {
                         </a>
                     </div>
                 </div>
-                <p className='footer__copy'>&#169; Marco Cortes. All rights reserved</p>
+                <p className='footer__copy'>&#169; 2021 &middot; Marco Cortes &middot; Todos los derechos reservados</p>
             </div>
         </footer>
     )
