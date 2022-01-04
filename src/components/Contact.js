@@ -11,7 +11,7 @@ export const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
         setEnviando(true);
-        emailjs.sendForm('servicio', 'template', form.current, 'user')
+        emailjs.sendForm('service_20o0n6k', 'template_b81rk0e', form.current, 'user_AHOlZL7oLRPBUOF8VT9F1')
             .then(() => {
                 setEnviando(false);
                 setStatus(true);
@@ -47,7 +47,7 @@ export const Contact = () => {
                         <i className="uil uil-phone contact__icon"></i>
                         <div>
                             <h3 className="contact__title">Llamame</h3>
-                            <span className="contact_subtitle">5532777800</span>
+                            <span className="contact_subtitle">+52 55 32 77 78 00</span>
                         </div>
                     </div>
 

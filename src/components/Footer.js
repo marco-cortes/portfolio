@@ -1,6 +1,7 @@
 import React from 'react'
 
 export const Footer = () => {
+
     return (
         <footer className='footer'>
             <div className='footer__bg'>
@@ -33,7 +34,7 @@ export const Footer = () => {
                         </a>
                     </div>
                 </div>
-                <p className='footer__copy'>&#169; 2021 &middot; Marco Cortes &middot; Todos los derechos reservados</p>
+                <p className='footer__copy'>&#169; {new Date().getFullYear()} &middot; Marco Cortes &middot; Todos los derechos reservados</p>
             </div>
         </footer>
     )

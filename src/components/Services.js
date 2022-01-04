@@ -4,24 +4,24 @@ export const Services = () => {
 
     useEffect(() => {
         const modalViews = document.querySelectorAll(".services__modal"),
-              modalBtns = document.querySelectorAll(".services__button"),
-              modalClose = document.querySelectorAll(".services__modal-close");
-        let modal = function(modalClick) {
+            modalBtns = document.querySelectorAll(".services__button"),
+            modalClose = document.querySelectorAll(".services__modal-close");
+        let modal = function (modalClick) {
             modalViews[modalClick].classList.add("active-modal");
         }
         modalBtns.forEach((modalBtn, i) => {
-            modalBtn.addEventListener("click" , () => {
+            modalBtn.addEventListener("click", () => {
                 modal(i)
             })
         })
         modalClose.forEach(modalClose => {
-            modalClose.addEventListener("click" , () => {
+            modalClose.addEventListener("click", () => {
                 modalViews.forEach(modalView => {
                     modalView.classList.remove("active-modal");
                 });
             });
         })
-    },[]);
+    }, []);
     return (
         <section className="services section" id="services">
             <h2 className="section__title">Servicios</h2>
