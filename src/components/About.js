@@ -1,6 +1,5 @@
 import img from '../img/kayn.jpg';
-//import pdf from '../docs/CV.pdf';
-import { Link } from 'react-router-dom';
+import pdf from '../docs/CV.pdf';
 
 export const About = () => {
     return (
@@ -13,8 +12,8 @@ export const About = () => {
                 <img src={img} alt="about" className="about__img" />
                 <div className="about__data">
                     <p className="about__description">
-                        Estudiante de la carrera de Ingeniería en Computación en la FES Aragón (UNAM),
-                        cursando el 8vo semestre. <br /><br /> Soy un programador web, especializado en Java y React JS, conociendo frameworks como Spring, Hibernate, JPA y MySQL.
+                        Con 21 años, soy un estudiante de la carrera de Ingeniería en Computación en la FES Aragón (UNAM), en donde estoy
+                        cursando el 8vo semestre. <br /><br /> Soy un programador web, especializado en Java y React JS, conociendo tecnologías como Spring, Hibernate, JPA y MySQL.
                     </p>
                     <div className="about__info">
                         <div>
@@ -31,9 +30,9 @@ export const About = () => {
                         </div>
                     </div>
                     <div className="about__buttons">
-                        <Link className="button button--flex" to="/curriculum" target="_blank" rel='noreferrer'>
-                            Curriculum Vitae <i className="uil uil-clipboard-notes button__icon"></i>
-                        </Link>
+                        <a className="button button--flex" href={pdf} download="Marco_Antonio_Cortes_Nava_CV">
+                            Descargar CV <i className="uil uil-download-alt button__icon"></i>
+                        </a>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,17 @@
-import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useEffect } from "react"
+
+import azure from '../docs/AZURE.pdf';
+import oracle from '../docs/ORACLE.pdf';
+import react from '../docs/REACT.pdf';
+import node from '../docs/NODE.pdf';
+import php from '../docs/PHP.pdf';
+import html from '../docs/HTML.pdf';
+import spring from '../docs/SPRING.pdf';
+import laravel from '../docs/LARAVEL.pdf';
+import cch from '../docs/CCH.pdf';
+import fes from '../docs/FES.pdf';
+import { QualificationItem } from "./QualificationItem";
+
 
 export const Qualification = () => {
 
@@ -44,159 +56,18 @@ export const Qualification = () => {
                 <div className="qualification__sections">
 
                     <div className="qualification__content qualification__active" data-content id="education">
-
-                        <div className="qualification__data">
-                            <div>
-                                <Link to="/fes" target="_blank" rel="noreferrer"><h3 className="qualification__title">Ingeniería en Computación</h3></Link>
-                                <span className="qualification__subtitle">México - FES Aragón (UNAM)</span>
-                                <div className="qualification__calendar">
-                                    <i className="uil uil-calendar-alt"></i> 2018 - Presente
-                                </div>
-                            </div>
-                            <div>
-                                <span className="qualification__rounder"></span>
-                                <span className="qualification__line"></span>
-                            </div>
-                        </div>
-
-                        <div className="qualification__data">
-                            <div></div>
-
-                            <div>
-                                <span className="qualification__rounder"></span>
-                                <span className="qualification__line"></span>
-                            </div>
-
-                            <div>
-                                <Link to="/cch" target="_blank" rel="noreferrer"><h3 className="qualification__title">Bachillerato</h3></Link>
-                                <span className="qualification__subtitle">México - CCH Vallejo (UNAM)</span>
-                                <div className="qualification__calendar">
-                                    <i className="uil uil-calendar-alt"></i> 2015 - 2018
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div className="qualification__data">
-                            <div>
-                                <Link to="/azure" target="_blank" rel="noreferrer"><h3 className="qualification__title">Azure AZ-900</h3></Link>
-                                <span className="qualification__subtitle">México - Inovaccion</span>
-                                <div className="qualification__calendar">
-                                    <i className="uil uil-calendar-alt"></i> Octubre 2021
-                                </div>
-                            </div>
-                            <div>
-                                <span className="qualification__rounder"></span>
-                                <span className="qualification__line"></span>
-                            </div>
-                        </div>
-
-                        <div className="qualification__data">
-                            <div></div>
-
-                            <div>
-                                <span className="qualification__rounder"></span>
-                            </div>
-
-                            <div>
-                                <Link to="/oracle" target="_blank" rel="noreferrer"><h3 className="qualification__title">Oracle Database Foundations</h3></Link>
-                                <span className="qualification__subtitle">México - Oracle Academy</span>
-                                <div className="qualification__calendar">
-                                    <i className="uil uil-calendar-alt"></i> Diciembre 2021
-                                </div>
-                            </div>
-                        </div>
+                        <QualificationItem title="Ingeniería en Computación" subtitle="México - FES Aragón (UNAM)" date="2018 - Presente" doc={fes} name="FES" />
+                        <QualificationItem title="Bachillerato" subtitle="México - CCH Vallejo (UNAM)" date="2015 - 2018" doc={cch} name="CCH" end={true} />
+                        <QualificationItem title="Azure AZ-900" subtitle="México - Inovaccion" date="Octubre 2021" doc={azure} name="AZURE" />
+                        <QualificationItem title="Oracle Database Foundations" subtitle="México - Oracle Academy" date="Diciembre 2021" doc={oracle} name="ORACLE" end={true} last={true} />
                     </div>
-
                     <div className="qualification__content" data-content id="work">
-                        <div className="qualification__data">
-                            <div>
-                                <Link to="/spring" target="_blank" rel="noreferrer"><h3 className="qualification__title">Universidad Spring</h3></Link>
-                                <span className="qualification__subtitle">México - Udemy</span>
-                                <div className="qualification__calendar">
-                                    <i className="uil uil-calendar-alt"></i> Diciembre 2021
-                                </div>
-                            </div>
-                            <div>
-                                <span className="qualification__rounder"></span>
-                                <span className="qualification__line"></span>
-                            </div>
-                        </div>
-
-                        <div className="qualification__data">
-                            <div></div>
-                            <div>
-                                <span className="qualification__rounder"></span>
-                                <span className="qualification__line"></span>
-                            </div>
-
-                            <div>
-                                <Link to="/frontend" target="_blank" rel="noreferrer"><h3 className="qualification__title">HTML, CSS y JS</h3></Link>
-                                <span className="qualification__subtitle">México - Udemy</span>
-                                <div className="qualification__calendar">
-                                    <i className="uil uil-calendar-alt"></i> Diciembre 2021
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="qualification__data">
-                            <div>
-                                <Link to="/node" target="_blank" rel="noreferrer"><h3 className="qualification__title">Node JS</h3></Link>
-                                <span className="qualification__subtitle">México - UNAM</span>
-                                <div className="qualification__calendar">
-                                    <i className="uil uil-calendar-alt"></i> Agosto 2021
-                                </div>
-                            </div>
-                            <div>
-                                <span className="qualification__rounder"></span>
-                                <span className="qualification__line"></span>
-                            </div>
-                        </div>
-
-                        <div className="qualification__data">
-                            <div></div>
-                            <div>
-                                <span className="qualification__rounder"></span>
-                                <span className="qualification__line"></span>
-                            </div>
-
-                            <div>
-                                <Link to="/react" target="_blank" rel="noreferrer"><h3 className="qualification__title">React + Firebase</h3></Link>
-                                <span className="qualification__subtitle">México - Udemy</span>
-                                <div className="qualification__calendar">
-                                    <i className="uil uil-calendar-alt"></i> Julio 2021
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="qualification__data">
-                            <div>
-                                <Link to="/laravel" target="_blank" rel="noreferrer"><h3 className="qualification__title">MVC con Laravel</h3></Link>
-                                <span className="qualification__subtitle">México - UNAM</span>
-                                <div className="qualification__calendar">
-                                    <i className="uil uil-calendar-alt"></i> Febrero 2021
-                                </div>
-                            </div>
-                            <div>
-                                <span className="qualification__rounder"></span>
-                                <span className="qualification__line"></span>
-                            </div>
-                        </div>
-
-                        <div className="qualification__data">
-                            <div></div>
-                            <div>
-                                <span className="qualification__rounder"></span>
-                            </div>
-
-                            <div>
-                                <Link to="/php" target="_blank" rel="noreferrer"><h3 className="qualification__title">Desarrollo web con PHP</h3></Link>
-                                <span className="qualification__subtitle">México - UNAM</span>
-                                <div className="qualification__calendar">
-                                    <i className="uil uil-calendar-alt"></i> Febrero 2021
-                                </div>
-                            </div>
-                        </div>
+                        <QualificationItem title="Universidad Spring" subtitle="México - Udemy" date="Diciembre 2021" doc={spring} name="SPRING" />
+                        <QualificationItem title="HTML, CSS y JS" subtitle="México - Udemy" date="Diciembre 2021" doc={html} name="FRONTEND" end={true} />
+                        <QualificationItem title="Node JS" subtitle="México - UNAM" date="Agosto 2021" doc={node} name="NODE" />
+                        <QualificationItem title="React + Firebase" subtitle="México - Udemy" date="Julio 2021" doc={react} name="REACT" end={true} />
+                        <QualificationItem title="MVC con Laravel" subtitle="México - UNAM" date="Febrero 2021" doc={laravel} name="LARAVEL" />
+                        <QualificationItem title="Desarrollo web con PHP" subtitle="México - UNAM" date="Febrero 2021" doc={php} name="PHP" end={true} last={true} />
                     </div>
                 </div>
             </div>

@@ -6,10 +6,11 @@ import 'swiper/css';
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-// import Swiper core and required modules
 import SwiperCore, {
     Navigation, Mousewheel, Keyboard, Pagination
 } from 'swiper';
+
+import { PortfolioItem } from './PortfolioItem';
 
 SwiperCore.use([Navigation, Mousewheel, Keyboard, Pagination]);
 
@@ -26,44 +27,25 @@ export const Portfolio = () => {
                 pagination={true}
                 className='portfolio__container container'>
                 <SwiperSlide>
-                    <div className="portfolio__content grid">
-                        <img src={img1} alt="" className="portfolio__img" />
-                        <div className='portfolio__data'>
-                            <h3 className='portfolio__title'>Aplicación en Spring</h3>
-                            <p className='portfolio__description'>Sitio web responsivo con métodos para crear, actualizar o eliminar registros
-                                con Spring y Hibernate.</p>
-                            <a className='button button--flex button--small portfolio__button' href="https://marco-spring-jar.herokuapp.com/" target="_blank" rel="noreferrer">
-                                Demo
-                                <i className="uil uil-arrow-circle-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
+                    <PortfolioItem
+                        img={img1}
+                        title="Aplicación en Spring"
+                        desc="Sitio web responsivo con métodos para crear, actualizar o eliminar registros con Spring y Hibernate"
+                        link="https://marco-spring-jar.herokuapp.com/" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="portfolio__content grid">
-                        <img src={img2} alt="" className="portfolio__img" />
-                        <div className='portfolio__data'>
-                            <h3 className='portfolio__title'>Aplicación en Laravel</h3>
-                            <p className='portfolio__description'>Sitio web de CRUD con login y registro de usuarios.</p>
-                            <a className='button button--flex button--small portfolio__button' href="https://marco-laravel.herokuapp.com/login" target="_blank" rel="noreferrer">
-                                Demo
-                                <i className="uil uil-arrow-circle-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
+                    <PortfolioItem
+                        img={img2}
+                        title="Aplicación en Laravel"
+                        desc="Sitio web de CRUD con login y registro de usuarios."
+                        link="https://marco-laravel.herokuapp.com/login" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="portfolio__content grid">
-                        <img src={img3} alt="" className="portfolio__img" />
-                        <div className='portfolio__data'>
-                            <h3 className='portfolio__title'>Landing Page</h3>
-                            <p className='portfolio__description'>Sitio web promocional de un producto.</p>
-                            <a className='button button--flex button--small portfolio__button' href="/#">
-                                Demo
-                                <i className="uil uil-arrow-circle-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
+                    <PortfolioItem
+                        img={img3}
+                        title="Landing Page"
+                        desc="Sitio web promocional de un producto."
+                        link="/#" />
                 </SwiperSlide>
             </Swiper>
         </section>

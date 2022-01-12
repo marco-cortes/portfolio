@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { HeaderLink } from './HeaderLink';
 
 export const Header = () => {
 
@@ -55,42 +56,16 @@ export const Header = () => {
                 <a href="/" className="nav__logo">&lt; Marco Cortes /&gt;</a>
                 <div className="nav__menu" id="nav-menu">
                     <ul className="nav__list grid">
-                        <li className="nav__item">
-                            <a href="#home" className="nav__link active-link">
-                                <i className="uil uil-estate nav__icon"></i> Inicio
-                            </a>
-                        </li>
-                        <li className="nav__item">
-                            <a href="#about" className="nav__link">
-                                <i className="uil uil-user nav__icon"></i> Sobre mi
-                            </a>
-                        </li>
-                        <li className="nav__item">
-                            <a href="#skills" className="nav__link">
-                                <i className="uil uil-brackets-curly nav__icon"></i> Habilidades
-                            </a>
-                        </li>
-                        <li className="nav__item">
-                            <a href="#services" className="nav__link">
-                                <i className="uil uil-briefcase-alt nav__icon"></i> Servicios
-                            </a>
-                        </li>
-                        <li className="nav__item">
-                            <a href="#portfolio" className="nav__link">
-                                <i className="uil uil-layer-group nav__icon"></i> Portafolio
-                            </a>
-                        </li>
-                        <li className="nav__item">
-                            <a href="#contact" className="nav__link">
-                                <i className="uil uil-comment-alt-message nav__icon"></i> Contacto
-                            </a>
-                        </li>
+                        <HeaderLink text="Inicio" icon="uil uil-estate" link="#home" active={true} />
+                        <HeaderLink text="Sobre mi" icon="uil uil-user" link="#about" />
+                        <HeaderLink text="Habilidades" icon="uil uil-brackets-curly" link="#skills" />
+                        <HeaderLink text="Servicios" icon="uil uil-briefcase-alt" link="#services" />
+                        <HeaderLink text="Portafolio" icon="uil uil-layer-group" link="#portfolio" />
+                        <HeaderLink text="Contacto" icon="uil uil-comment-alt-message" link="#contact" />
                     </ul>
                     <i className="uil uil-times nav__close" id="nav-close"></i> </div>
                 <div className="nav__btns">
-
                     <i className='uil uil-moon change-theme' id="theme-button"></i>
-
                     <div className="nav__toggle" id="nav-toggle">
                         <i className="uil uil-apps"></i>
                     </div>

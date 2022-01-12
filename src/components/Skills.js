@@ -1,5 +1,7 @@
 import { useEffect } from "react"
 import { Qualification } from "./Qualification";
+import { SkillsItem } from "./SkillsItem";
+import { SkillsTitle } from "./SkillsTitle";
 
 export const Skills = () => {
 
@@ -31,461 +33,70 @@ export const Skills = () => {
                 <div className="skills__container container grid" data-aos="fade-right">
                     <div>
                         <div className="skills__content skills__open">
-                            <div className="skills__header">
-                                <i className="uil uil-brackets-curly skills__icon"></i>
-                                <div>
-                                    <h1 className="skills__titles">Backend</h1>
-                                    <span className="skills__subtitle">Mi nivel de conocimiento en Backend</span>
-                                </div>
-                                <i className="uil uil-angle-down skills__arrow"></i>
-                            </div>
-
+                            <SkillsTitle title="Backend" subtitle="Mi nivel de conocimiento en Backend" icon="uil uil-brackets-curly" />
                             <div className="skills__list grid">
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">Java</h3>
-                                        <span className="skills__number">80%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__java">
-
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">Spring</h3>
-                                        <span className="skills__number">70%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__spring">
-
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">Hibernate</h3>
-                                        <span className="skills__number">60%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__hibernate">
-
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">JPA</h3>
-                                        <span className="skills__number">75%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__jpa">
-
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">Java Server Faces</h3>
-                                        <span className="skills__number">70%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__jsf">
-
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">PHP</h3>
-                                        <span className="skills__number">65%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__php">
-
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">Laravel</h3>
-                                        <span className="skills__number">45%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__laravel">
-
-                                        </span>
-                                    </div>
-                                </div>
-
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">Node JS</h3>
-                                        <span className="skills__number">60%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__node">
-
-                                        </span>
-                                    </div>
-                                </div>
+                                <SkillsItem text="Java" percent="80" />
+                                <SkillsItem text="Spring" percent="70" />
+                                <SkillsItem text="Hibernate" percent="60" />
+                                <SkillsItem text="JPA" percent="75" />
+                                <SkillsItem text="Java Server Faces" percent="70" />
+                                <SkillsItem text="PHP" percent="65" />
+                                <SkillsItem text="Laravel" percent="45" />
+                                <SkillsItem text="Node JS" percent="60" />
                             </div>
                         </div>
 
                         <div className="skills__content skills__close">
-                            <div className="skills__header">
-                                <i className="uil uil-database skills__icon"></i>
-                                <div>
-                                    <h1 className="skills__titles">Bases de Datos</h1>
-                                    <span className="skills__subtitle">Conocimiento de bases de datos</span>
-                                </div>
-                                <i className="uil uil-angle-down skills__arrow"></i>
-                            </div>
+                            <SkillsTitle title="Bases de Datos" subtitle="Conocimiento de Bases de Datos" icon="uil uil-database" />
                             <div className="skills__list grid">
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">MySQL</h3>
-                                        <span className="skills__number">90%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__mysql">
-
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">Workbench</h3>
-                                        <span className="skills__number">80%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__workbench">
-
-                                        </span>
-                                    </div>
-                                </div>
-
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">PostgreSQL</h3>
-                                        <span className="skills__number">70%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__postgres">
-
-                                        </span>
-                                    </div>
-                                </div>
-
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">Firebase</h3>
-                                        <span className="skills__number">65%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__firebase">
-
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">MongoDB</h3>
-                                        <span className="skills__number">65%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__mongodb">
-
-                                        </span>
-                                    </div>
-                                </div>
-
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">SQL</h3>
-                                        <span className="skills__number">80%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__sql">
-
-                                        </span>
-                                    </div>
-                                </div>
+                                <SkillsItem text="MySQL" percent="90" />
+                                <SkillsItem text="Workbench" percent="80" />
+                                <SkillsItem text="PostgreSQL" percent="70" />
+                                <SkillsItem text="Firebase" percent="65" />
+                                <SkillsItem text="MongoDB" percent="65" />
+                                <SkillsItem text="SQL" percent="80" />
                             </div>
                         </div>
 
                         <div className="skills__content skills__close">
-                            <div className="skills__header">
-                                <i className="uil uil-cloud skills__icon"></i>
-                                <div>
-                                    <h1 className="skills__titles">Nube</h1>
-                                    <span className="skills__subtitle">Mi conocimiento en la nube</span>
-                                </div>
-                                <i className="uil uil-angle-down skills__arrow"></i>
-                            </div>
+                            <SkillsTitle title="Nube" subtitle="Mi conocimiento en la nube" icon="uil uil-cloud" />
                             <div className="skills__list grid">
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">Azure</h3>
-                                        <span className="skills__number">70%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__azure">
-
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">Google Cloud</h3>
-                                        <span className="skills__number">50%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__google">
-
-                                        </span>
-                                    </div>
-                                </div>
-
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">AWS</h3>
-                                        <span className="skills__number">60%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__aws">
-
-                                        </span>
-                                    </div>
-                                </div>
-
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">Heroku</h3>
-                                        <span className="skills__number">65%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__heroku">
-
-                                        </span>
-                                    </div>
-                                </div>
+                                <SkillsItem text="Azure" percent="70" />
+                                <SkillsItem text="Google Cloud" percent="50" />
+                                <SkillsItem text="AWS" percent="60" />
+                                <SkillsItem text="Heroku" percent="65" />
                             </div>
                         </div>
                     </div>
 
                     <div>
                         <div className="skills__content skills__close">
-                            <div className="skills__header">
-                                <i className="uil uil-desktop skills__icon"></i>
-                                <div>
-                                    <h1 className="skills__titles">Frontend</h1>
-                                    <span className="skills__subtitle">Mis Habilidades de Frontend</span>
-                                </div>
-                                <i className="uil uil-angle-down skills__arrow"></i>
-                            </div>
+                            <SkillsTitle title="Frontend" subtitle="Mis Habilidades de Frontend" icon="uil uil-desktop" />
                             <div className="skills__list grid">
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">HTML</h3>
-                                        <span className="skills__number">90%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__html">
-
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">XHTML</h3>
-                                        <span className="skills__number">65%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__xhtml">
-
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">CSS</h3>
-                                        <span className="skills__number">60%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__css">
-
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">Javascript</h3>
-                                        <span className="skills__number">70%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__js">
-
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">Typescript</h3>
-                                        <span className="skills__number">65%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__ts">
-
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">Bootstrap</h3>
-                                        <span className="skills__number">70%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__bootstrap">
-
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">PrimeFaces</h3>
-                                        <span className="skills__number">60%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__primefaces">
-
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">React</h3>
-                                        <span className="skills__number">85%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__react">
-
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">Ionic</h3>
-                                        <span className="skills__number">50%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__ionic">
-
-                                        </span>
-                                    </div>
-                                </div>
+                                <SkillsItem text="HTML" percent="90" />
+                                <SkillsItem text="XHTML" percent="65" />
+                                <SkillsItem text="CSS" percent="60" />
+                                <SkillsItem text="SCSS" percent="55" />
+                                <SkillsItem text="Javascript" percent="70" />
+                                <SkillsItem text="Typescript" percent="65" />
+                                <SkillsItem text="Bootstrap" percent="70" />
+                                <SkillsItem text="PrimeFaces" percent="60" />
+                                <SkillsItem text="React" percent="85" />
+                                <SkillsItem text="Ionic" percent="50" />
                             </div>
                         </div>
 
                         <div className="skills__content skills__close">
-                            <div className="skills__header">
-                                <i className="uil uil-wrench skills__icon"></i>
-                                <div>
-                                    <h1 className="skills__titles">Otros</h1>
-                                    <span className="skills__subtitle">Otras tecnologías que he usado</span>
-                                </div>
-                                <i className="uil uil-angle-down skills__arrow"></i>
-                            </div>
+                            <SkillsTitle title="Otros" subtitle="Otras tecnologías que he usado" icon="uil uil-wrench" />
                             <div className="skills__list grid">
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">Git y Github</h3>
-                                        <span className="skills__number">70%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__git">
-
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">Maven</h3>
-                                        <span className="skills__number">80%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__maven">
-
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">NPM</h3>
-                                        <span className="skills__number">70%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__npm">
-
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">Yarn</h3>
-                                        <span className="skills__number">70%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__yarn">
-
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">Composer</h3>
-                                        <span className="skills__number">50%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__composer">
-
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">Postman</h3>
-                                        <span className="skills__number">85%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__postman">
-
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">Docker</h3>
-                                        <span className="skills__number">65%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__docker">
-
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="skills__data">
-                                    <div className="skills__titles">
-                                        <h3 className="skills__name">Linux</h3>
-                                        <span className="skills__number">70%</span>
-                                    </div>
-                                    <div className="skills__bar">
-                                        <span className="skills__percentage skills__yarn">
-
-                                        </span>
-                                    </div>
-                                </div>
+                                <SkillsItem text="Git y Github" percent="70" />
+                                <SkillsItem text="Maven" percent="80" />
+                                <SkillsItem text="NPM" percent="70" />
+                                <SkillsItem text="Yarn" percent="70" />
+                                <SkillsItem text="Composer" percent="50" />
+                                <SkillsItem text="Postman" percent="85" />
+                                <SkillsItem text="Docker" percent="65" />
+                                <SkillsItem text="Linux" percent="70" />
                             </div>
                         </div>
                     </div>
