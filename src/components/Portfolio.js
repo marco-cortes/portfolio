@@ -1,6 +1,10 @@
-import img1 from '../img/portfolio1.jpg';
-import img2 from '../img/portfolio2.jpg';
-import img3 from '../img/portfolio3.jpg';
+import mern from '../img/mern.svg';
+import spring from "../img/spring-logo.svg";
+import laravel from '../img/laravel.png';
+import reactfirebase from "../img/reactfirebase.svg";
+import springreact from "../img/springreact.svg";
+import react from "../img/react.svg";
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import "swiper/css/navigation";
@@ -28,24 +32,45 @@ export const Portfolio = () => {
                 className='portfolio__container container'>
                 <SwiperSlide>
                     <PortfolioItem
-                        img={img1}
+                        img={springreact}
+                        title="Aplicación en Spring Boot y React"
+                        desc="Landng Page con reservaciones, se implementó Spring Boot y React con Redux."
+                        link="https://marco-cortes.me/gif-expert/" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <PortfolioItem
+                        img={mern}
+                        title="MERN Stack"
+                        desc="Aplicación web con Node.JS, Express, React, Redux y Mongo DB."
+                        link="https://marco-cortes-mern.herokuapp.com/" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <PortfolioItem
+                        img={reactfirebase}
+                        title="CRUD React + Firebase"
+                        desc="Aplicación con login y registro implementando Firebase y React Context."
+                        link="https://marco-journal-app.web.app/" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <PortfolioItem
+                        img={react}
+                        title="React App"
+                        desc="Buscador de imagenes gif usando la API de Giphy."
+                        link="https://marco-cortes.me/gif-expert/" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <PortfolioItem
+                        img={spring}
                         title="Aplicación en Spring"
-                        desc="Sitio web responsivo con métodos para crear, actualizar o eliminar registros con Spring y Hibernate"
+                        desc="Sitio web responsivo con métodos para crear, actualizar o eliminar registros con Spring MVC y Hibernate"
                         link="https://marco-spring-jar.herokuapp.com/" />
                 </SwiperSlide>
                 <SwiperSlide>
                     <PortfolioItem
-                        img={img2}
+                        img={laravel}
                         title="Aplicación en Laravel"
                         desc="Sitio web de CRUD con login y registro de usuarios."
                         link="https://marco-laravel.herokuapp.com/login" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <PortfolioItem
-                        img={img3}
-                        title="Landing Page"
-                        desc="Sitio web promocional de un producto."
-                        link="/#" />
                 </SwiperSlide>
             </Swiper>
         </section>

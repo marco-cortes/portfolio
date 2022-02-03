@@ -13,9 +13,11 @@ export const Skills = () => {
 
             for (let i = 0; i < skillsContent.length; i++) {
                 skillsContent[i].className = "skills__content skills__close";
+                skillsContent[i].childNodes[1].className = "skills__list grid";
             }
             if (itemClass === "skills__content skills__close") {
                 this.parentNode.className = "skills__content skills__open";
+                this.parentNode.childNodes[1].className="skills__list grid animate__animated animate__fadeIn"
             }
         }
 
@@ -33,7 +35,7 @@ export const Skills = () => {
                 <div className="skills__container container grid" data-aos="fade-right">
                     <div>
                         <div className="skills__content skills__open">
-                            <SkillsTitle title="Backend" subtitle="Mi nivel de conocimiento en Backend" icon="uil uil-brackets-curly" />
+                            <SkillsTitle title="Backend" subtitle="Mis conocimientos de Back-end" icon="uil uil-brackets-curly" />
                             <div className="skills__list grid">
                                 <SkillsItem text="Java" percent="80" />
                                 <SkillsItem text="Spring" percent="70" />
@@ -47,7 +49,7 @@ export const Skills = () => {
                         </div>
 
                         <div className="skills__content skills__close">
-                            <SkillsTitle title="Bases de Datos" subtitle="Conocimiento de Bases de Datos" icon="uil uil-database" />
+                            <SkillsTitle title="Bases de Datos" subtitle="Conocimiento en bases de datos" icon="uil uil-database" />
                             <div className="skills__list grid">
                                 <SkillsItem text="MySQL" percent="90" />
                                 <SkillsItem text="Workbench" percent="80" />
@@ -59,7 +61,7 @@ export const Skills = () => {
                         </div>
 
                         <div className="skills__content skills__close">
-                            <SkillsTitle title="Nube" subtitle="Mi conocimiento en la nube" icon="uil uil-cloud" />
+                            <SkillsTitle title="Nube" subtitle="Mi experiencia en la nube" icon="uil uil-cloud" />
                             <div className="skills__list grid">
                                 <SkillsItem text="Azure" percent="70" />
                                 <SkillsItem text="Google Cloud" percent="50" />
@@ -71,7 +73,7 @@ export const Skills = () => {
 
                     <div>
                         <div className="skills__content skills__close">
-                            <SkillsTitle title="Frontend" subtitle="Mis Habilidades de Frontend" icon="uil uil-desktop" />
+                            <SkillsTitle title="Frontend" subtitle="Mis habilidades de Front-end" icon="uil uil-desktop" />
                             <div className="skills__list grid">
                                 <SkillsItem text="HTML" percent="90" />
                                 <SkillsItem text="XHTML" percent="65" />
@@ -82,6 +84,7 @@ export const Skills = () => {
                                 <SkillsItem text="Bootstrap" percent="70" />
                                 <SkillsItem text="PrimeFaces" percent="60" />
                                 <SkillsItem text="React" percent="85" />
+                                <SkillsItem text="Redux" percent="70" />
                                 <SkillsItem text="Ionic" percent="50" />
                             </div>
                         </div>

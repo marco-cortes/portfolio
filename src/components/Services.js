@@ -26,21 +26,21 @@ export const Services = () => {
     }, []);
 
     const backend = [
-        "Desarrollo e implementación de aplicaciones web.",
-        "Despliegue de aplicaciones con dominio y certificado SSL en la nube.",
+        "Creación y mantenimiento de APIs REST.",
         "Arquitectura MVC o de Micro Servicios.",
+        "Despliegue de aplicaciones con dominio y certificado SSL en la nube.",
         "Implementación de Docker."
     ];
 
     const frontend = [
-        "Maquetado web adaptable a moviles con HTML, CSS y Javascript.",
+        "Maquetado web responsivo con HTML, CSS y Javascript.",
         "Implementación de Bootstrap.",
+        "Implementación de React a páginas estáticas.",
         "Animaciones a elementos web.",
-        "Creación aplicaciones de todo tipo."
     ];
 
     const databases = [
-        "Diseño de bases de datos para aplicaciones de todo tipo.",
+        "Diseño de bases de datos.",
         "Implementación de bases de datos con SQL.",
         "Bases de datos relacionales o no relacionales."
     ];

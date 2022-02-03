@@ -11,17 +11,19 @@ export const Footer = () => {
                         <span className='footer__subtitle'>Programador web</span>
                     </div>
 
-                    <ul className='footer__links'>
-                        <li>
-                            <a className='footer__link' href="#services">Servicios</a>
-                        </li>
-                        <li>
-                            <a className='footer__link' href="#portfolio">Portafolio</a>
-                        </li>
-                        <li>
-                            <a className='footer__link' href="#contact">Contacto</a>
-                        </li>
-                    </ul>
+                    <div>
+                        <ul className='footer__links'>
+                            <li>
+                                <a className='footer__link' href="#services">Servicios</a>
+                            </li>
+                            <li>
+                                <a className='footer__link' href="#portfolio">Portafolio</a>
+                            </li>
+                            <li>
+                                <a className='footer__link' href="#contact">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
                     <div className="footer__socials">
                         <a className="footer__social" href="https://facebook.com/marco.cortesxd" target="_blank" rel="noreferrer">
                             <i className="uil uil-facebook-f"></i>

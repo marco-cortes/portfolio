@@ -1,5 +1,4 @@
 export const ServicesModal = ({ title, items }) => {
-    console.log(title)
     return (
         <div className="services__modal">
             <div className="services__modal-content">
