@@ -1,9 +1,8 @@
-import mern from '../img/mern.svg';
-import spring from "../img/spring-logo.svg";
-import laravel from '../img/laravel.png';
-import reactfirebase from "../img/reactfirebase.svg";
-import springreact from "../img/springreact.svg";
-import react from "../img/react.svg";
+import pokedex from "../img/p1.png";
+import coursite from "../img/p2.png";
+import todo from "../img/p3.png";
+import spring from "../img/p4.png";
+import bookmark from "../img/p5.png";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -30,48 +29,47 @@ export const Portfolio = () => {
                 cssMode={true} navigation={true}
                 pagination={true}
                 className='portfolio__container container'>
+
                 <SwiperSlide>
                     <PortfolioItem
-                        img={springreact}
-                        title="Aplicación en Spring Boot y React"
-                        desc="Landng Page con reservaciones, se implementó Spring Boot y React con Redux."
-                        link="https://marco-cortes.me/gif-expert/" />
+                        img={pokedex}
+                        title="Pokédex"
+                        desc="Aplicación de registro de pokémons desarrollada bajo un MERN stack."
+                        link="https://pokemon.marco-cortes.me" />
                 </SwiperSlide>
+
                 <SwiperSlide>
                     <PortfolioItem
-                        img={mern}
-                        title="MERN Stack"
-                        desc="Aplicación web con Node.JS, Express, React, Redux y Mongo DB."
+                        img={coursite}
+                        title="Coursite"
+                        desc="PWA de una plataforma de aprendizaje desarrollada con React y Spring Boot."
+                        link="https://app-coursite.web.app" />
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <PortfolioItem
+                        img={todo}
+                        title="TODO"
+                        desc="Aplicación para guardar lista de tareas, desarrollada con React."
                         link="https://marco-cortes-mern.herokuapp.com/" />
                 </SwiperSlide>
-                <SwiperSlide>
-                    <PortfolioItem
-                        img={reactfirebase}
-                        title="CRUD React + Firebase"
-                        desc="Aplicación con login y registro implementando Firebase y React Context."
-                        link="https://marco-journal-app.web.app/" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <PortfolioItem
-                        img={react}
-                        title="React App"
-                        desc="Buscador de imagenes gif usando la API de Giphy."
-                        link="https://marco-cortes.me/gif-expert/" />
-                </SwiperSlide>
+
                 <SwiperSlide>
                     <PortfolioItem
                         img={spring}
-                        title="Aplicación en Spring"
-                        desc="Sitio web responsivo con métodos para crear, actualizar o eliminar registros con Spring MVC y Hibernate"
-                        link="https://marco-spring-jar.herokuapp.com/" />
+                        title="Control de Clientes"
+                        desc="Aplicación desarrollado con Spring y Thymeleaf, encargada de llevar un control de clientes."
+                        link="https://marco-cortes-mern.herokuapp.com/" />
                 </SwiperSlide>
+
                 <SwiperSlide>
                     <PortfolioItem
-                        img={laravel}
-                        title="Aplicación en Laravel"
-                        desc="Sitio web de CRUD con login y registro de usuarios."
-                        link="https://marco-laravel.herokuapp.com/login" />
+                        img={bookmark}
+                        title="Bookmark"
+                        desc="Landing page basada en un diseño de FrontendMentor."
+                        link="https://marco-cortes.me/bookmark" />
                 </SwiperSlide>
+                
             </Swiper>
         </section>
     )

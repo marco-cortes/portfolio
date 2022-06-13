@@ -6,37 +6,49 @@ export const Services = () => {
 
     useEffect(() => {
         const modalViews = document.querySelectorAll(".services__modal"),
+            modalContent= document.querySelectorAll(".services__content"),
             modalBtns = document.querySelectorAll(".services__button"),
             modalClose = document.querySelectorAll(".services__modal-close");
-        let modal = function (modalClick) {
-            modalViews[modalClick].classList.add("active-modal");
-        }
+
+        modalContent.forEach((item, index) => {
+            item.addEventListener("click", () => {
+                show(index, modalViews);
+            });
+        });
+
         modalBtns.forEach((modalBtn, i) => {
             modalBtn.addEventListener("click", () => {
-                modal(i)
+                show(i, modalViews);
             })
-        })
+        });
+
         modalClose.forEach(modalClose => {
             modalClose.addEventListener("click", () => {
-                modalViews.forEach(modalView => {
-                    modalView.classList.remove("active-modal");
-                });
+                close(modalViews);
             });
-        })
+        });
     }, []);
 
+    const show = (i, modals) => {
+        modals[i].classList.add("active-modal");
+    }
+
+    const close = (modals) => {
+        modals.forEach(modal => {
+            modal.classList.remove("active-modal");
+        });
+    }
+
     const backend = [
-        "Creación y mantenimiento de APIs REST.",
-        "Arquitectura MVC o de Micro Servicios.",
+        "Creación de APIs REST.",
+        "Arquitectura MVC.",
         "Despliegue de aplicaciones con dominio y certificado SSL en la nube.",
-        "Implementación de Docker."
     ];
 
     const frontend = [
         "Maquetado web responsivo con HTML, CSS y Javascript.",
         "Implementación de Bootstrap.",
         "Implementación de React a páginas estáticas.",
-        "Animaciones a elementos web.",
     ];
 
     const databases = [
@@ -54,19 +66,18 @@ export const Services = () => {
             <div className="services__container container grid">
                 <div className="services__content">
                     <ServicesCard icon="uil uil-server" text="Backend" />
-                    <ServicesModal items={backend} title="Backend" />
                 </div>
-
                 <div className="services__content">
                     <ServicesCard icon="uil uil uil-arrow" text="Frontend" />
-                    <ServicesModal items={frontend} title="Frontend" />
                 </div>
-
                 <div className="services__content">
                     <ServicesCard icon="uil uil-database" text="Bases de Datos" />
-                    <ServicesModal items={databases} title="Bases de Datos" />
                 </div>
             </div>
+
+            <ServicesModal items={backend} title="Backend" />
+            <ServicesModal items={frontend} title="Frontend" />
+            <ServicesModal items={databases} title="Bases de Datos" />
         </section>
     )
 }

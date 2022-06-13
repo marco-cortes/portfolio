@@ -1,5 +1,5 @@
 import img from '../img/kayn.jpg';
-import pdf from '../docs/CV.pdf';
+import pdf from '../docs/Marco_Antonio_Cortes_Nava_CV.pdf';
 import { Link } from './Link';
 
 export const About = () => {
@@ -16,7 +16,9 @@ export const About = () => {
                         Con 21 años, soy un estudiante de la carrera de Ingeniería en Computación en la FES Aragón (UNAM), me encuentro
                         cursando el 8vo semestre. <br /><br /> Llevo más de 3 años programando en Java, mis conocimientos están enfocados en Java y React, además de eso he trabajado con tecnologías como Redux, Spring, Hibernate, JPA y MySQL.
                     </p>
-                    <div className="about__info">
+                    {
+                        /*
+                        <div className="about__info">
                         <div>
                             <span className="about__info-title">03+</span>
                             <span className="about__info-name">Años de<br /> exp. en Java</span>
@@ -30,8 +32,10 @@ export const About = () => {
                             <span className="about__info-name">Cursos <br /> concluidos</span>
                         </div>
                     </div>
+                        */
+                    }
                     <div className="about__buttons">
-                        <Link text="Descargar CV" icon="uil uil-download-alt" dir={pdf} download="Marco_Antonio_Cortes_Nava_CV"/>
+                        <Link text="Descargar CV" icon="uil uil-download-alt" dir={pdf} download="Marco_Antonio_Cortes_Nava_CV" />
                     </div>
                 </div>
             </div>

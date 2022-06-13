@@ -37,36 +37,35 @@ export const Skills = () => {
                         <div className="skills__content skills__open">
                             <SkillsTitle title="Backend" subtitle="Mis conocimientos de Back-end" icon="uil uil-brackets-curly" />
                             <div className="skills__list grid">
-                                <SkillsItem text="Java" percent="80" />
-                                <SkillsItem text="Spring" percent="70" />
-                                <SkillsItem text="Hibernate" percent="60" />
-                                <SkillsItem text="JPA" percent="75" />
-                                <SkillsItem text="Java Server Faces" percent="70" />
-                                <SkillsItem text="PHP" percent="65" />
-                                <SkillsItem text="Laravel" percent="45" />
-                                <SkillsItem text="Node JS" percent="60" />
+                                <SkillsItem text="Java" icon="https://img.icons8.com/color/48/undefined/java-coffee-cup-logo--v1.png" />
+                                <SkillsItem text="Spring Boot" icon="https://img.icons8.com/color/48/undefined/spring-logo.png" />
+                                <SkillsItem text="Hibernate y JPA" icon="https://hibernate.org/images/hibernate_icon_whitebkg.svg" />
+                                <SkillsItem text="Node JS" icon="https://electrokoding.com/img/node.png" />
+                                <SkillsItem text="Express JS" icon="https://assets.website-files.com/61ca3f775a79ec5f87fcf937/6202fcdee5ee8636a145a41b_1234.png" />
+                                <SkillsItem text="Mongoose" icon="https://images.opencollective.com/frontendmasters/0b9cda4/logo/256.png" />
+                                <SkillsItem text="PHP" icon="https://cdn-icons-png.flaticon.com/512/919/919830.png" />
+                                <SkillsItem text="Laravel" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png" />
                             </div>
                         </div>
 
                         <div className="skills__content skills__close">
                             <SkillsTitle title="Bases de Datos" subtitle="Conocimiento en bases de datos" icon="uil uil-database" />
                             <div className="skills__list grid">
-                                <SkillsItem text="MySQL" percent="90" />
-                                <SkillsItem text="Workbench" percent="80" />
-                                <SkillsItem text="PostgreSQL" percent="70" />
-                                <SkillsItem text="Firebase" percent="65" />
-                                <SkillsItem text="MongoDB" percent="65" />
-                                <SkillsItem text="SQL" percent="80" />
+                                <SkillsItem text="MySQL" icon="https://www.freepnglogos.com/uploads/logo-mysql-png/logo-mysql-mysql-logo-png-images-are-download-crazypng-21.png" />
+                                <SkillsItem text="MongoDB" icon="https://res.cloudinary.com/geopois/image/upload/v1629281092/logos/mongodb_zqggua.png" />
+                                <SkillsItem text="Firestore" icon="https://seeklogo.com/images/F/firestore-logo-3828671CC5-seeklogo.com.png" />
+                                <SkillsItem text="Workbench" icon="https://dashboard.snapcraft.io/site_media/appmedia/2020/04/mysql-workbench.png" />
+                                <SkillsItem text="SQL" icon="https://cdn-icons-png.flaticon.com/512/337/337953.png" />
                             </div>
                         </div>
 
                         <div className="skills__content skills__close">
                             <SkillsTitle title="Nube" subtitle="Mi experiencia en la nube" icon="uil uil-cloud" />
                             <div className="skills__list grid">
-                                <SkillsItem text="Azure" percent="70" />
-                                <SkillsItem text="Google Cloud" percent="50" />
-                                <SkillsItem text="AWS" percent="60" />
-                                <SkillsItem text="Heroku" percent="65" />
+                                <SkillsItem text="Azure" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/1200px-Microsoft_Azure.svg.png" />
+                                <SkillsItem text="Google Cloud" icon="https://www.sophos.com/sites/default/files/2022-02/googlecloud.png" />
+                                <SkillsItem text="AWS" icon="https://pbs.twimg.com/profile_images/1377340526890872832/Qvi0U8pF_400x400.jpg" />
+                                <SkillsItem text="Heroku" icon="https://cdn.iconscout.com/icon/free/png-256/heroku-2752161-2284978.png" />
                             </div>
                         </div>
                     </div>
@@ -75,31 +74,27 @@ export const Skills = () => {
                         <div className="skills__content skills__close">
                             <SkillsTitle title="Frontend" subtitle="Mis habilidades de Front-end" icon="uil uil-desktop" />
                             <div className="skills__list grid">
-                                <SkillsItem text="HTML" percent="90" />
-                                <SkillsItem text="XHTML" percent="65" />
-                                <SkillsItem text="CSS" percent="60" />
-                                <SkillsItem text="SCSS" percent="55" />
-                                <SkillsItem text="Javascript" percent="70" />
-                                <SkillsItem text="Typescript" percent="65" />
-                                <SkillsItem text="Bootstrap" percent="70" />
-                                <SkillsItem text="PrimeFaces" percent="60" />
-                                <SkillsItem text="React" percent="85" />
-                                <SkillsItem text="Redux" percent="70" />
-                                <SkillsItem text="Ionic" percent="50" />
+                                <SkillsItem text="HTML" icon="https://cdn-icons-png.flaticon.com/512/732/732212.png" />
+                                <SkillsItem text="CSS" icon="https://cdn-icons-png.flaticon.com/512/732/732190.png" />
+                                <SkillsItem text="Javascript" icon="https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg" />
+                                <SkillsItem text="SCSS" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1200px-Sass_Logo_Color.svg.png" />
+                                <SkillsItem text="Bootstrap" icon="https://i.stack.imgur.com/C9301.png" />
+                                <SkillsItem text="React" icon="https://www.nedi.cl/nedi/icon-react.png" />
+                                <SkillsItem text="Redux" icon="http://assets.stickpng.com/images/5848309bcef1014c0b5e4a9a.png" />
                             </div>
                         </div>
 
                         <div className="skills__content skills__close">
                             <SkillsTitle title="Otros" subtitle="Otras tecnologías que he usado" icon="uil uil-wrench" />
                             <div className="skills__list grid">
-                                <SkillsItem text="Git y Github" percent="70" />
-                                <SkillsItem text="Maven" percent="80" />
-                                <SkillsItem text="NPM" percent="70" />
-                                <SkillsItem text="Yarn" percent="70" />
-                                <SkillsItem text="Composer" percent="50" />
-                                <SkillsItem text="Postman" percent="85" />
-                                <SkillsItem text="Docker" percent="65" />
-                                <SkillsItem text="Linux" percent="70" />
+                                <SkillsItem text="Git y Github" icon="http://assets.stickpng.com/images/5847f981cef1014c0b5e48be.png" />
+                                <SkillsItem text="Maven" icon="https://images.velog.io/images/pllap/post/9cefd5dd-bd0c-4382-aa25-6751e1cc9cec/file_type_maven_icon_130397.png" />
+                                <SkillsItem text="Npm" icon="https://www.pngrepo.com/png/331509/512/npm.png" />
+                                <SkillsItem text="Yarn" icon="https://avatars.githubusercontent.com/u/22247014?s=400&v=4" />
+                                <SkillsItem text="Composer" icon="https://cdn-icons-png.flaticon.com/512/919/919840.png" />
+                                <SkillsItem text="Postman" icon="https://repository-images.githubusercontent.com/233450313/aab78f80-432c-11ea-80f4-3eeebac4d126" />
+                                <SkillsItem text="Docker" icon="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" />
+                                <SkillsItem text="Linux" icon="https://cdn-icons-png.flaticon.com/512/518/518713.png" />
                             </div>
                         </div>
                     </div>

@@ -327,9 +327,11 @@ img {
     display: inline-block;
     background-color: var(--first-color);
     color: #FFF;
-    padding: 1rem;
-    border-radius: .5rem;
+    padding: 1rem 2rem;
+    border-radius: 30px;
     font-weight: var(--font-medium);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: .2s;
 }
 
 .button:hover {
@@ -349,6 +351,7 @@ img {
 
 .button--small {
     padding: .75rem 1rem;
+    box-shadow: none;
 }
 
 .button--link {
@@ -400,7 +403,6 @@ img {
     display: flex;
     justify-content: center;
 }
-
 .skills__container {
     row-gap: 0;
 }
@@ -411,6 +413,11 @@ img {
     margin-bottom: var(--mb-2-5);
     cursor: pointer;
 }
+.skills__i {
+    width: 30px;
+    height: 30px;
+}
+
 
 .skills__icon,
 .skills__arrow {
@@ -439,6 +446,7 @@ img {
 .skills__titles {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: var(--mb-0-5);
 }
 
@@ -450,7 +458,6 @@ img {
 .skills__bar,
 .skills__percentage {
     height: 5px;
-    border-radius: .25rem;
 }
 
 .skills__bar {
@@ -619,12 +626,12 @@ a .qualification__title:hover {
     border-radius: .25rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
     transition: .3s;
+    cursor: pointer;
 }
 
 .services__content:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, .9);
+    transform: translateY(-.5rem);
 }
-
 
 .services__icon {
     display: block;
@@ -728,6 +735,10 @@ a .qualification__title:hover {
 
 .portfolio__description {
     margin-bottom: var(--mb-0-75);
+}
+
+.portfolio__button {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .portfolio__button:hover .button__icon {

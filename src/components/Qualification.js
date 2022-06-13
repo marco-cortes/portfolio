@@ -67,7 +67,8 @@ export const Qualification = () => {
                         <QualificationItem title="Ingeniería en Computación" subtitle="México - FES Aragón (UNAM)" date="2018 - Presente" doc={fes} name="FES" />
                         <QualificationItem title="Bachillerato" subtitle="México - CCH Vallejo (UNAM)" date="2015 - 2018" doc={cch} name="CCH" end={true} />
                         <QualificationItem title="Azure AZ-900" subtitle="México - Inovaccion" date="Octubre 2021" doc={azure} name="AZURE" />
-                        <QualificationItem title="Oracle Database Foundations" subtitle="México - Oracle Academy" date="Diciembre 2021" doc={oracle} name="ORACLE" end={true} last={true} />
+                        <QualificationItem title="Oracle Database Foundations" subtitle="México - Oracle Academy" date="Diciembre 2021" doc={oracle} name="ORACLE" end={true}/>
+                        <QualificationItem title="Launch X" subtitle="México - Innovacción Virtual" date="Mayo 2022" last={true} />
                     </div>
                     <div className="qualification__content" data-content id="work">
                     <QualificationItem title="React: De cero a experto" subtitle="México - Udemy" date="Enero 2022" doc={reactF} name="REACT_FULL" end={true} />

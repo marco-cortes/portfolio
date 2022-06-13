@@ -2,7 +2,7 @@ export const ServicesModal = ({ title, items }) => {
     return (
         <div className="services__modal">
             <div className="services__modal-content">
-                <h4 className="services__modal-title">{title} </h4>
+                <h4 className="services__modal-title">{title}</h4>
                 <i className="uil uil-times services__modal-close"></i>
                 <ul className="services__modal-services grid">
                     {
