@@ -353,7 +353,13 @@ img {
     padding: .75rem 1rem;
     box-shadow: none;
 }
-
+.button--secondary {
+    background-color: #444c52;
+    margin-left: 0.5rem;
+}
+.button--secondary:hover {
+    background-color: #bcbec4;
+}
 .button--link {
     padding: 0;
     background-color: transparent;

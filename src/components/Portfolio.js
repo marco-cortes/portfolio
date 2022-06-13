@@ -35,7 +35,8 @@ export const Portfolio = () => {
                         img={pokedex}
                         title="Pokédex"
                         desc="Aplicación de registro de pokémons desarrollada bajo un MERN stack."
-                        link="https://pokemon.marco-cortes.me" />
+                        link="https://pokemon.marco-cortes.me"
+                        repo="https://github.com/marco-cortes/mern-pokedex" />
                 </SwiperSlide>
 
                 <SwiperSlide>
@@ -43,7 +44,8 @@ export const Portfolio = () => {
                         img={coursite}
                         title="Coursite"
                         desc="PWA de una plataforma de aprendizaje desarrollada con React y Spring Boot."
-                        link="https://app-coursite.web.app" />
+                        link="https://app-coursite.web.app"
+                        repo="https://github.com/marco-cortes/coursite" />
                 </SwiperSlide>
 
                 <SwiperSlide>
@@ -51,7 +53,8 @@ export const Portfolio = () => {
                         img={todo}
                         title="TODO"
                         desc="Aplicación para guardar lista de tareas, desarrollada con React."
-                        link="https://marco-cortes-mern.herokuapp.com/" />
+                        link="https://marco-cortes-mern.herokuapp.com/"
+                        repo="https://github.com/marco-cortes/todo-app" />
                 </SwiperSlide>
 
                 <SwiperSlide>
@@ -59,7 +62,8 @@ export const Portfolio = () => {
                         img={spring}
                         title="Control de Clientes"
                         desc="Aplicación desarrollado con Spring y Thymeleaf, encargada de llevar un control de clientes."
-                        link="https://marco-cortes-mern.herokuapp.com/" />
+                        link="https://marco-cortes-mern.herokuapp.com/"
+                        repo="https://github.com/marco-cortes/proyecto-ventas" />
                 </SwiperSlide>
 
                 <SwiperSlide>
@@ -67,9 +71,9 @@ export const Portfolio = () => {
                         img={bookmark}
                         title="Bookmark"
                         desc="Landing page basada en un diseño de FrontendMentor."
-                        link="https://marco-cortes.me/bookmark" />
+                        link="https://marco-cortes.me/bookmark"
+                        repo="https://github.com/marco-cortes/bookmark" />
                 </SwiperSlide>
-                
             </Swiper>
         </section>
     )
