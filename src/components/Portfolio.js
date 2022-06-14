@@ -53,7 +53,7 @@ export const Portfolio = () => {
                         img={todo}
                         title="TODO"
                         desc="Aplicación para guardar lista de tareas, desarrollada con React."
-                        link="https://marco-cortes-mern.herokuapp.com/"
+                        link="https://marco-cortes-todo.herokuapp.com/"
                         repo="https://github.com/marco-cortes/todo-app" />
                 </SwiperSlide>
 
@@ -62,7 +62,7 @@ export const Portfolio = () => {
                         img={spring}
                         title="Control de Clientes"
                         desc="Aplicación desarrollado con Spring y Thymeleaf, encargada de llevar un control de clientes."
-                        link="https://marco-cortes-mern.herokuapp.com/"
+                        link="https://marco-spring-jar.herokuapp.com/"
                         repo="https://github.com/marco-cortes/proyecto-ventas" />
                 </SwiperSlide>
 
