@@ -53,7 +53,10 @@ export const Header = () => {
     return (
         <header className="header" id="header">
             <nav className="nav container">
-                <a href="/" className="nav__logo">&lt; Marco Cortes /&gt;</a>
+                <a href="/" className="nav__logo">
+                    <span>&lt; Marco Cortes /&gt;</span>
+                    <span className="nav__subtitle">Programador</span>
+                </a>
                 <div className="nav__menu" id="nav-menu">
                     <ul className="nav__list grid">
                         <HeaderLink text="Inicio" icon="uil uil-estate" link="#home" active={true} />

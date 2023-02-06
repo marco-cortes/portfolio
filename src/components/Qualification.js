@@ -48,7 +48,7 @@ export const Qualification = () => {
     return (
         <section className="qualification section div-bg">
             <h2 className="section__title">Educación</h2>
-            <span className="section__subtitle">Mi preparación profesional</span>
+            <span className="section__subtitle">Mi formación profesional</span>
 
             <div className="qualification__container container">
                 <div className="qualification__tabs">

@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from './Link';
-
 import { MainIcon } from './MainIcon';
 import { MainImage } from './MainImage';
 
@@ -20,9 +19,10 @@ export const Main = () => {
                         </div>
                         <div className="home__data">
                             <h1 className="home__title">Marco Cortes</h1>
-                            <h3 className="home__subtitle">Programador web fullstack</h3>
+                            <h3 className="home__subtitle">Programador</h3>
                             <p className="home__description">
-                                Cuento con experiencia y conocimiento en tecnologías de desarrollo web, como React, Express y Spring Boot.
+                                Soy un apasionado por la tecnología y programación, 
+                                busco aprendizaje para mi desarrollo profesional.
                             </p>
                             <Link text="Contáctame" icon="uil uil-message" dir="#contact" />
                         </div>

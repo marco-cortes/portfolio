@@ -1,7 +1,7 @@
 import pokedex from "../img/p1.png";
 import coursite from "../img/p2.png";
-import todo from "../img/p3.png";
-import spring from "../img/p4.png";
+//import todo from "../img/p3.png";
+//import spring from "../img/p4.png";
 import bookmark from "../img/p5.png";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -35,7 +35,7 @@ export const Portfolio = () => {
                         img={pokedex}
                         title="Pokédex"
                         desc="Aplicación de registro de pokémons desarrollada bajo un MERN stack."
-                        link="https://pokemon.marco-cortes.me"
+                        link="https://pokedex-app.up.railway.app"
                         repo="https://github.com/marco-cortes/mern-pokedex" />
                 </SwiperSlide>
 
@@ -48,7 +48,9 @@ export const Portfolio = () => {
                         repo="https://github.com/marco-cortes/coursite" />
                 </SwiperSlide>
 
-                <SwiperSlide>
+                {
+                    /**
+                     * <SwiperSlide>
                     <PortfolioItem
                         img={todo}
                         title="TODO"
@@ -65,13 +67,15 @@ export const Portfolio = () => {
                         link="https://marco-spring-jar.herokuapp.com/"
                         repo="https://github.com/marco-cortes/proyecto-ventas" />
                 </SwiperSlide>
+                      */
+                }
 
                 <SwiperSlide>
                     <PortfolioItem
                         img={bookmark}
                         title="Bookmark"
                         desc="Landing page basada en un diseño de FrontendMentor."
-                        link="https://marco-cortes.me/bookmark"
+                        link="https://marco-cortes.github.io/bookmark/"
                         repo="https://github.com/marco-cortes/bookmark" />
                 </SwiperSlide>
             </Swiper>

@@ -13,8 +13,15 @@ export const About = () => {
                 <img src={img} alt="about" className="about__img" />
                 <div className="about__data">
                     <p className="about__description">
-                        Con 21 años, soy un estudiante de la carrera de Ingeniería en Computación en la FES Aragón (UNAM), me encuentro
-                        cursando el 8vo semestre. <br /><br /> Llevo más de 3 años programando en Java, mis conocimientos están enfocados en Java y React, además de eso he trabajado con tecnologías como Redux, Spring, Hibernate, JPA y MySQL.
+                        Tengo 22 años y soy egresado de la carrera de Ingeniería en Computación en la FES Aragón (UNAM).
+                        <br /><br />
+                        Cuento con conocimientos sobre tecnologías de desarrollo web como React, Angular, Spring Boot y Node JS.
+                        <br /><br />
+                        Actualmente me encuentro trabajando como programador FullStack en <strong>Crowe México</strong> implementando tecnologías
+                        de desarrollo web.
+                        <br /><br />
+                        Aspiro al éxito profesional, encontrar oportunidades que contribuyan a mi desarrollo como programador, así como tambien
+                        brindar mis conocimientos como servicio para llegar a un bien común.
                     </p>
                     {
                         /*

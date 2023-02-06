@@ -8,7 +8,7 @@ export const Footer = () => {
                 <div className='footer__container container grid'>
                     <div>
                         <h2 className='footer__title'>&lt; Marco Cortes /&gt;</h2>
-                        <span className='footer__subtitle'>Programador web</span>
+                        <span className='footer__subtitle'>Programador</span>
                     </div>
 
                     <div>
